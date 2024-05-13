@@ -24,7 +24,9 @@ struct BookView: View {
                     ScrollView(.vertical){
                         LazyVGrid(columns: gridItems,alignment: .center){
                             ForEach(bookModel.booksResponse!.items, id: \.self){ book in
+                                NavigationLink(destination: BookSummaryView(bookTitle: book.volumeInfo?.title ?? "")){
                                     BookContentView(book: book).frame(width: geometry.size.width/2, height: geometry.size.width/2).padding()
+                                }
                             }
                         }
                     }

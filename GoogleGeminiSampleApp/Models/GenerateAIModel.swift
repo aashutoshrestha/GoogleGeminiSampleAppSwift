@@ -1,5 +1,5 @@
 //
-//  CaptureBookViewModel.swift
+//  GenerateAIModel.swift
 //  GoogleGeminiSampleApp
 //
 //  Created by Aashutosh Shrestha on 5/13/24.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import GoogleGenerativeAI
-class CaptureBookViewModel: ObservableObject {
+class GenerateAIModel: ObservableObject {
     @Published var responseBook : String = ""
     @Published var image: UIImage?
     @Published var isShowingCaptureImageView = false
