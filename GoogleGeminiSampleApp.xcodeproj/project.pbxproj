@@ -177,6 +177,7 @@
 		6E89191C2BEFC7BD009D74E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E8919472BF22207009D74E4 /* Settings */,
 				6E8919402BF21AE4009D74E4 /* CaptureBookView */,
 				6E89193F2BF21AD2009D74E4 /* BookView */,
 				6E89192C2BF1E03A009D74E4 /* EmptyView.swift */,
@@ -217,6 +218,13 @@
 				6E8919382BF2079F009D74E4 /* CaptureImageView.swift */,
 			);
 			path = CaptureBookView;
+			sourceTree = "<group>";
+		};
+		6E8919472BF22207009D74E4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
