@@ -233,6 +233,8 @@
 				6E8918FC2BEFC578009D74E4 /* PBXTargetDependency */,
 			);
 			name = GoogleGeminiSampleAppTests;
+			packageProductDependencies = (
+			);
 			productName = GoogleGeminiSampleAppTests;
 			productReference = 6E8918FA2BEFC578009D74E4 /* GoogleGeminiSampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
