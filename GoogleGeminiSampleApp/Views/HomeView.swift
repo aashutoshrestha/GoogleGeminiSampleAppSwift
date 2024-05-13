@@ -13,7 +13,7 @@ struct HomeView: View {
             BookView().tabItem {
                 Label("Book", systemImage: "books.vertical")
             }
-            CameraView().tabItem {
+            CaptureBook().tabItem {
                 Label("Capture Book", systemImage: "camera")
             }
             

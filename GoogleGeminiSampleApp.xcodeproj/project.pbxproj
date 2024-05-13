@@ -22,7 +22,9 @@
 		6E89192D2BF1E03A009D74E4 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89192C2BF1E03A009D74E4 /* EmptyView.swift */; };
 		6E8919302BF1E109009D74E4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6E89192F2BF1E109009D74E4 /* SDWebImageSwiftUI */; };
 		6E8919322BF1E130009D74E4 /* BookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919312BF1E130009D74E4 /* BookContentView.swift */; };
-		6E8919342BF1EE91009D74E4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919332BF1EE91009D74E4 /* CameraView.swift */; };
+		6E8919342BF1EE91009D74E4 /* CaptureBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919332BF1EE91009D74E4 /* CaptureBook.swift */; };
+		6E8919372BF205F9009D74E4 /* CaptureBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919362BF205F9009D74E4 /* CaptureBookViewModel.swift */; };
+		6E8919392BF2079F009D74E4 /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919382BF2079F009D74E4 /* CaptureImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,10 @@
 		6E8919262BF1CCF7009D74E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6E89192C2BF1E03A009D74E4 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		6E8919312BF1E130009D74E4 /* BookContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContentView.swift; sourceTree = "<group>"; };
-		6E8919332BF1EE91009D74E4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		6E8919332BF1EE91009D74E4 /* CaptureBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureBook.swift; sourceTree = "<group>"; };
+		6E8919352BF1FF87009D74E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6E8919362BF205F9009D74E4 /* CaptureBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureBookViewModel.swift; sourceTree = "<group>"; };
+		6E8919382BF2079F009D74E4 /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 		6E8918EC2BEFC576009D74E4 /* GoogleGeminiSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E8919352BF1FF87009D74E4 /* Info.plist */,
 				6E8919252BF1CCEC009D74E4 /* Constants */,
 				6E89191C2BEFC7BD009D74E4 /* Views */,
 				6E89191B2BEFC7B8009D74E4 /* ViewModels */,
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6E89191F2BF1CBD6009D74E4 /* BookViewModel.swift */,
+				6E8919362BF205F9009D74E4 /* CaptureBookViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,7 +170,8 @@
 				6E89192C2BF1E03A009D74E4 /* EmptyView.swift */,
 				6E89191D2BEFC7DA009D74E4 /* HomeView.swift */,
 				6E8919212BF1CBE2009D74E4 /* BookView.swift */,
-				6E8919332BF1EE91009D74E4 /* CameraView.swift */,
+				6E8919332BF1EE91009D74E4 /* CaptureBook.swift */,
+				6E8919382BF2079F009D74E4 /* CaptureImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,9 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E89192D2BF1E03A009D74E4 /* EmptyView.swift in Sources */,
+				6E8919392BF2079F009D74E4 /* CaptureImageView.swift in Sources */,
 				6E8919322BF1E130009D74E4 /* BookContentView.swift in Sources */,
+				6E8919372BF205F9009D74E4 /* CaptureBookViewModel.swift in Sources */,
 				6E8919242BF1CBF7009D74E4 /* Book.swift in Sources */,
-				6E8919342BF1EE91009D74E4 /* CameraView.swift in Sources */,
+				6E8919342BF1EE91009D74E4 /* CaptureBook.swift in Sources */,
 				6E8918EE2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift in Sources */,
 				6E89191E2BEFC7DA009D74E4 /* HomeView.swift in Sources */,
 				6E8919202BF1CBD6009D74E4 /* BookViewModel.swift in Sources */,
@@ -496,6 +506,7 @@
 				DEVELOPMENT_TEAM = X5F6N9ECLU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleGeminiSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -524,6 +535,7 @@
 				DEVELOPMENT_TEAM = X5F6N9ECLU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleGeminiSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

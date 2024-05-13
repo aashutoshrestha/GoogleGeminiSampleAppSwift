@@ -16,6 +16,7 @@ struct BookContentView: View {
             .onSuccess { image, data, cacheType in
                 
             }
-            .resizable()
+            .resizable().scaledToFit()
+            .frame(maxWidth: .infinity)
     }
 }
