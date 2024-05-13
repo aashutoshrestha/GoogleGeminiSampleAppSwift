@@ -10,6 +10,7 @@ import AVFoundation
 struct CaptureBook: View {
     
     @ObservedObject private var captureBookModel = CaptureBookViewModel()
+    @ObservedObject private var speechModel = TextToSpeechManager()
     var body: some View{
         VStack {
             if let image = captureBookModel.image {
@@ -26,6 +27,15 @@ struct CaptureBook: View {
                         Text("Loading…")
                     }
                 }else{
+                    if speechModel.speaking {
+                        Button("Stop Listening") {
+                            self.speechModel.stopSpeaking()
+                        }
+                    }else{
+                        Button("Listen") {
+                            self.speechModel.speak(text: self.captureBookModel.responseBook)
+                        }
+                    }
                     Text(captureBookModel.responseBook)
                 }
             }
