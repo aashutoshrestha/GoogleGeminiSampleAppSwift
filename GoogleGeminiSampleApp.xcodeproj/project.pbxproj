@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		6E8918EE2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8918ED2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift */; };
-		6E8918F02BEFC576009D74E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8918EF2BEFC576009D74E4 /* ContentView.swift */; };
 		6E8918F22BEFC578009D74E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8918F12BEFC578009D74E4 /* Assets.xcassets */; };
-		6E8918F52BEFC578009D74E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8918F42BEFC578009D74E4 /* Preview Assets.xcassets */; };
 		6E8918FF2BEFC578009D74E4 /* GoogleGeminiSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8918FE2BEFC578009D74E4 /* GoogleGeminiSampleAppTests.swift */; };
 		6E8919092BEFC578009D74E4 /* GoogleGeminiSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919082BEFC578009D74E4 /* GoogleGeminiSampleAppUITests.swift */; };
 		6E89190B2BEFC578009D74E4 /* GoogleGeminiSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89190A2BEFC578009D74E4 /* GoogleGeminiSampleAppUITestsLaunchTests.swift */; };
 		6E8919192BEFC708009D74E4 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 6E8919182BEFC708009D74E4 /* GoogleGenerativeAI */; };
+		6E89191E2BEFC7DA009D74E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89191D2BEFC7DA009D74E4 /* HomeView.swift */; };
+		6E8919202BF1CBD6009D74E4 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89191F2BF1CBD6009D74E4 /* BookViewModel.swift */; };
+		6E8919222BF1CBE2009D74E4 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919212BF1CBE2009D74E4 /* BookView.swift */; };
+		6E8919242BF1CBF7009D74E4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919232BF1CBF7009D74E4 /* Book.swift */; };
+		6E8919272BF1CCF7009D74E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919262BF1CCF7009D74E4 /* Constants.swift */; };
+		6E89192B2BF1DEB6009D74E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6E89192A2BF1DEB6009D74E4 /* Alamofire */; };
+		6E89192D2BF1E03A009D74E4 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89192C2BF1E03A009D74E4 /* EmptyView.swift */; };
+		6E8919302BF1E109009D74E4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6E89192F2BF1E109009D74E4 /* SDWebImageSwiftUI */; };
+		6E8919322BF1E130009D74E4 /* BookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919312BF1E130009D74E4 /* BookContentView.swift */; };
+		6E8919342BF1EE91009D74E4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919332BF1EE91009D74E4 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +45,20 @@
 /* Begin PBXFileReference section */
 		6E8918EA2BEFC576009D74E4 /* GoogleGeminiSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleGeminiSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8918ED2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeminiSampleAppApp.swift; sourceTree = "<group>"; };
-		6E8918EF2BEFC576009D74E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E8918F12BEFC578009D74E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E8918F42BEFC578009D74E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E8918FA2BEFC578009D74E4 /* GoogleGeminiSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleGeminiSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8918FE2BEFC578009D74E4 /* GoogleGeminiSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeminiSampleAppTests.swift; sourceTree = "<group>"; };
 		6E8919042BEFC578009D74E4 /* GoogleGeminiSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleGeminiSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8919082BEFC578009D74E4 /* GoogleGeminiSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeminiSampleAppUITests.swift; sourceTree = "<group>"; };
 		6E89190A2BEFC578009D74E4 /* GoogleGeminiSampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeminiSampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E89191D2BEFC7DA009D74E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6E89191F2BF1CBD6009D74E4 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		6E8919212BF1CBE2009D74E4 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		6E8919232BF1CBF7009D74E4 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		6E8919262BF1CCF7009D74E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E89192C2BF1E03A009D74E4 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		6E8919312BF1E130009D74E4 /* BookContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContentView.swift; sourceTree = "<group>"; };
+		6E8919332BF1EE91009D74E4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E8919302BF1E109009D74E4 /* SDWebImageSwiftUI in Frameworks */,
 				6E8919192BEFC708009D74E4 /* GoogleGenerativeAI in Frameworks */,
+				6E89192B2BF1DEB6009D74E4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 				6E8918FD2BEFC578009D74E4 /* GoogleGeminiSampleAppTests */,
 				6E8919072BEFC578009D74E4 /* GoogleGeminiSampleAppUITests */,
 				6E8918EB2BEFC576009D74E4 /* Products */,
+				6E8919292BF1DEB6009D74E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,20 +113,14 @@
 		6E8918EC2BEFC576009D74E4 /* GoogleGeminiSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E8919252BF1CCEC009D74E4 /* Constants */,
+				6E89191C2BEFC7BD009D74E4 /* Views */,
+				6E89191B2BEFC7B8009D74E4 /* ViewModels */,
+				6E89191A2BEFC7AD009D74E4 /* Models */,
 				6E8918ED2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift */,
-				6E8918EF2BEFC576009D74E4 /* ContentView.swift */,
 				6E8918F12BEFC578009D74E4 /* Assets.xcassets */,
-				6E8918F32BEFC578009D74E4 /* Preview Content */,
 			);
 			path = GoogleGeminiSampleApp;
-			sourceTree = "<group>";
-		};
-		6E8918F32BEFC578009D74E4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				6E8918F42BEFC578009D74E4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		6E8918FD2BEFC578009D74E4 /* GoogleGeminiSampleAppTests */ = {
@@ -127,6 +138,49 @@
 				6E89190A2BEFC578009D74E4 /* GoogleGeminiSampleAppUITestsLaunchTests.swift */,
 			);
 			path = GoogleGeminiSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		6E89191A2BEFC7AD009D74E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E8919232BF1CBF7009D74E4 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E89191B2BEFC7B8009D74E4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6E89191F2BF1CBD6009D74E4 /* BookViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6E89191C2BEFC7BD009D74E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E8919312BF1E130009D74E4 /* BookContentView.swift */,
+				6E89192C2BF1E03A009D74E4 /* EmptyView.swift */,
+				6E89191D2BEFC7DA009D74E4 /* HomeView.swift */,
+				6E8919212BF1CBE2009D74E4 /* BookView.swift */,
+				6E8919332BF1EE91009D74E4 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E8919252BF1CCEC009D74E4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6E8919262BF1CCF7009D74E4 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6E8919292BF1DEB6009D74E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +201,8 @@
 			name = GoogleGeminiSampleApp;
 			packageProductDependencies = (
 				6E8919182BEFC708009D74E4 /* GoogleGenerativeAI */,
+				6E89192A2BF1DEB6009D74E4 /* Alamofire */,
+				6E89192F2BF1E109009D74E4 /* SDWebImageSwiftUI */,
 			);
 			productName = GoogleGeminiSampleApp;
 			productReference = 6E8918EA2BEFC576009D74E4 /* GoogleGeminiSampleApp.app */;
@@ -222,6 +278,8 @@
 			mainGroup = 6E8918E12BEFC576009D74E4;
 			packageReferences = (
 				6E8919172BEFC707009D74E4 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				6E8919282BF1DDEE009D74E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6E89192E2BF1E109009D74E4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 6E8918EB2BEFC576009D74E4 /* Products */;
 			projectDirPath = "";
@@ -239,7 +297,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8918F52BEFC578009D74E4 /* Preview Assets.xcassets in Resources */,
 				6E8918F22BEFC578009D74E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8918F02BEFC576009D74E4 /* ContentView.swift in Sources */,
+				6E89192D2BF1E03A009D74E4 /* EmptyView.swift in Sources */,
+				6E8919322BF1E130009D74E4 /* BookContentView.swift in Sources */,
+				6E8919242BF1CBF7009D74E4 /* Book.swift in Sources */,
+				6E8919342BF1EE91009D74E4 /* CameraView.swift in Sources */,
 				6E8918EE2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift in Sources */,
+				6E89191E2BEFC7DA009D74E4 /* HomeView.swift in Sources */,
+				6E8919202BF1CBD6009D74E4 /* BookViewModel.swift in Sources */,
+				6E8919222BF1CBE2009D74E4 /* BookView.swift in Sources */,
+				6E8919272BF1CCF7009D74E4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoogleGeminiSampleApp/Preview Content\"";
-				DEVELOPMENT_TEAM = KFZAD2LF3N;
+				DEVELOPMENT_TEAM = X5F6N9ECLU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,8 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoogleGeminiSampleApp/Preview Content\"";
-				DEVELOPMENT_TEAM = KFZAD2LF3N;
+				DEVELOPMENT_TEAM = X5F6N9ECLU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -606,6 +668,22 @@
 				minimumVersion = 0.5.2;
 			};
 		};
+		6E8919282BF1DDEE009D74E4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		6E89192E2BF1E109009D74E4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -613,6 +691,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6E8919172BEFC707009D74E4 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
 			productName = GoogleGenerativeAI;
+		};
+		6E89192A2BF1DEB6009D74E4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E8919282BF1DDEE009D74E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6E89192F2BF1E109009D74E4 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E89192E2BF1E109009D74E4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
