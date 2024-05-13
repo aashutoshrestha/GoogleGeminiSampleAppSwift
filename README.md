@@ -18,7 +18,7 @@ This app utilizes Google's generative AI to generate book summaries from books f
 - Apple's Camera API: Utilized for capturing book images.
 
 ## Folder Structure
-
+```
 GoogleGeminiSampleApp
 │
 ├── Models
@@ -45,7 +45,7 @@ GoogleGeminiSampleApp
 │
 └── Tests
 ├── GoogleGeminiSampleAppTests.swift
-
+```
 
 ## How to Use
 
