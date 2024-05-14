@@ -14,10 +14,8 @@ import GoogleGenerativeAI
 class BookSummaryViewModel: ObservableObject {
     // Published properties for UI updates
     @Published var responseBook: String = ""  /// The generated book summary.
-    @Published var image: UIImage?           /// (Potentially) An image related to the book.
-    @Published var isShowingCaptureImageView = false  /// Flag to control image view visibility.
     @Published var isResponseWaiting: Bool = false    /// Indicates if a response is being awaited.
-
+    ///
     /// The Generative AI model instance.
     private let model = GenerativeModel(name: "gemini-1.5-pro-latest", apiKey: Constants.generateAIKey)
 
