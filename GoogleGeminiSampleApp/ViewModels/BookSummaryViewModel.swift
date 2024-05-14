@@ -9,22 +9,37 @@ import Foundation
 import UIKit
 import SwiftUI
 import GoogleGenerativeAI
+
+/// ViewModel responsible for handling book summary generation using the Google Generative AI model.
 class BookSummaryViewModel: ObservableObject {
-    @Published var responseBook : String = ""
-    @Published var image: UIImage?
-    @Published var isShowingCaptureImageView = false
-    @Published var isResponseWaiting: Bool = false
-    let model = GenerativeModel(name: "gemini-1.5-pro-latest", apiKey: Constants.generateAIKey)
-    func getBookPrompt(bookName: String) -> String {
-        let promptText = "Find out the title and generate a short summary of the book \(bookName). In response , include the title and the summary."
-        return promptText
+    // Published properties for UI updates
+    @Published var responseBook: String = ""  /// The generated book summary.
+    @Published var image: UIImage?           /// (Potentially) An image related to the book.
+    @Published var isShowingCaptureImageView = false  /// Flag to control image view visibility.
+    @Published var isResponseWaiting: Bool = false    /// Indicates if a response is being awaited.
+
+    /// The Generative AI model instance.
+    private let model = GenerativeModel(name: "gemini-1.5-pro-latest", apiKey: Constants.generateAIKey)
+
+    /// Constructs the prompt for the AI model to generate a book summary.
+    /// - Parameter bookName: The name of the book.
+    /// - Returns: The formatted prompt string.
+    private func getBookPrompt(bookName: String) -> String {
+        return "Find out the title and generate a short summary of the book \(bookName). In response, include the title and the summary."
     }
-    func getBookResponse(bookName: String) async{
-        do{
+
+    /// Asynchronously fetches and processes the book summary from the AI model.
+    /// - Parameter bookName: The name of the book to summarize.
+    func getBookResponse(bookName: String) async {
+        isResponseWaiting = true // Indicate waiting for response
+        defer { isResponseWaiting = false } // Ensure waiting state is reset
+
+        do {
             let response = try await model.generateContent(getBookPrompt(bookName: bookName))
-            responseBook = response.text ?? ""
-        }catch let ex{
-            fatalError("There was an error generating response: \n \(ex.localizedDescription)")
+            responseBook = response.text ?? "" // Update with the response or empty string
+        } catch {
+            // Handle errors (e.g., display an error message to the user)
+            print("Error generating response: \(error.localizedDescription)")
         }
     }
 }

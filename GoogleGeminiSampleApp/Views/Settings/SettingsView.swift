@@ -35,7 +35,7 @@ struct SettingsView: View {
                 }
 
                 Button(action: {
-                    // ... (Your save logic remains the same)
+                    // ... (Our save logic remains the same)
                 }) {
                     Text("Save")
                         .frame(maxWidth: .infinity) // Make button full width
