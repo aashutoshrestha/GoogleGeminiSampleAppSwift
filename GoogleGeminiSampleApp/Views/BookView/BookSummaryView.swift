@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BookSummaryView: View {
     var bookTitle: String = ""
-    @ObservedObject private var bookContentModel = CaptureBookViewModel()
+    @ObservedObject private var bookContentModel = BookSummaryViewModel()
     @ObservedObject private var speechModel = TextToSpeechManager()
     var body: some View {
         if bookContentModel.responseBook == ""{

@@ -29,6 +29,8 @@
 		6E8919422BF21B04009D74E4 /* BookSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919412BF21B04009D74E4 /* BookSummaryView.swift */; };
 		6E8919442BF21B86009D74E4 /* BookSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919432BF21B86009D74E4 /* BookSummaryViewModel.swift */; };
 		6E8919462BF21BB7009D74E4 /* GenerateAIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919452BF21BB7009D74E4 /* GenerateAIModel.swift */; };
+		6E8919492BF23326009D74E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8919482BF23326009D74E4 /* SettingsView.swift */; };
+		6E89194C2BF233E5009D74E4 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89194B2BF233E5009D74E4 /* SaveData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		6E8919412BF21B04009D74E4 /* BookSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSummaryView.swift; sourceTree = "<group>"; };
 		6E8919432BF21B86009D74E4 /* BookSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSummaryViewModel.swift; sourceTree = "<group>"; };
 		6E8919452BF21BB7009D74E4 /* GenerateAIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAIModel.swift; sourceTree = "<group>"; };
+		6E8919482BF23326009D74E4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6E89194B2BF233E5009D74E4 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				6E8919352BF1FF87009D74E4 /* Info.plist */,
+				6E89194A2BF233D9009D74E4 /* Services */,
 				6E8919252BF1CCEC009D74E4 /* Constants */,
 				6E89191C2BEFC7BD009D74E4 /* Views */,
 				6E89191B2BEFC7B8009D74E4 /* ViewModels */,
@@ -223,8 +228,17 @@
 		6E8919472BF22207009D74E4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				6E8919482BF23326009D74E4 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		6E89194A2BF233D9009D74E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6E89194B2BF233E5009D74E4 /* SaveData.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,10 +387,12 @@
 				6E8919322BF1E130009D74E4 /* BookContentView.swift in Sources */,
 				6E8919372BF205F9009D74E4 /* CaptureBookViewModel.swift in Sources */,
 				6E8919242BF1CBF7009D74E4 /* Book.swift in Sources */,
+				6E89194C2BF233E5009D74E4 /* SaveData.swift in Sources */,
 				6E8919422BF21B04009D74E4 /* BookSummaryView.swift in Sources */,
 				6E8919442BF21B86009D74E4 /* BookSummaryViewModel.swift in Sources */,
 				6E8919342BF1EE91009D74E4 /* CaptureBook.swift in Sources */,
 				6E8918EE2BEFC576009D74E4 /* GoogleGeminiSampleAppApp.swift in Sources */,
+				6E8919492BF23326009D74E4 /* SettingsView.swift in Sources */,
 				6E89191E2BEFC7DA009D74E4 /* HomeView.swift in Sources */,
 				6E8919462BF21BB7009D74E4 /* GenerateAIModel.swift in Sources */,
 				6E8919202BF1CBD6009D74E4 /* BookViewModel.swift in Sources */,

@@ -32,7 +32,7 @@ struct BookView: View {
                     }
                 }
             }
-        }.navigationTitle("Gemini Sample Book App").searchable(text: $searchText).onSubmit(of: .search) {
+        }.navigationTitle("AI Book App").searchable(text: $searchText).onSubmit(of: .search) {
             if searchText.count > 3 {
                 bookModel.fetchBooks(searchTerm: searchText)
             }else{

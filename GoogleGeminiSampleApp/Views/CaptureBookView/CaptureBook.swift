@@ -41,6 +41,8 @@ struct CaptureBook: View {
             }
             Spacer()
             Button("Take a Picture") {
+                self.captureBookModel.responseBook = ""
+                self.captureBookModel.image = nil
                 self.captureBookModel.isShowingCaptureImageView.toggle()
             }
         }

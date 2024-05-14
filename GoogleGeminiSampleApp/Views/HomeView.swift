@@ -10,11 +10,20 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView{
-            BookView().tabItem {
+            NavigationView{
+                BookView()
+            }.tabItem {
                 Label("Book", systemImage: "books.vertical")
             }
-            CaptureBook().tabItem {
+            NavigationView{
+                CaptureBook()
+            }.tabItem {
                 Label("Capture Book", systemImage: "camera")
+            }
+            NavigationView{
+                SettingsView()
+            }.tabItem {
+                Label("Settings", systemImage: "gear")
             }
             
         }
