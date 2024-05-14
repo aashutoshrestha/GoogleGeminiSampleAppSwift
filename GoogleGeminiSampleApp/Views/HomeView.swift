@@ -10,26 +10,26 @@ import SwiftUI
 /// The main view that presents a TabView for navigation between different sections of the app.
 struct HomeView: View {
     var body: some View {
-        TabView { // Creates a tab bar interface for navigation
-
+        TabView {
+            
             // First Tab: BookView
-            BookView() // Content of the first tab
+            BookView()
                 .tabItem {
-                    Label("Book", systemImage: "books.vertical") // Label and icon for the tab
+                    Label("Book", systemImage: "books.vertical")
                 }
-
+            
             // Second Tab: CaptureBook
-            CaptureBook() // Content of the second tab
+            CaptureBook()
                 .tabItem {
-                    Label("Capture Book", systemImage: "camera") // Label and icon for the tab
+                    Label("Capture Book", systemImage: "camera")
                 }
-
+            
             // Third Tab: SettingsView
-            SettingsView() // Content of the third tab
+            SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear") // Label and icon for the tab
+                    Label("Settings", systemImage: "gear")
                 }
-        } // End of TabView
+        }
     }
 }
 

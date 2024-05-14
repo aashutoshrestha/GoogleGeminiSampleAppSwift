@@ -38,8 +38,8 @@ class CaptureBookViewModel: ObservableObject {
 
         do {
             let response = try await model.generateContent(defaultPrompt, bookImage)
-            responseBook = response.text ?? "" // Update responseBook
-            isResponseWaiting = false // Update isResponseWaiting
+            responseBook = response.text ?? ""
+            isResponseWaiting = false 
         } catch {
             // Error handling (consider replacing fatalError in production)
             fatalError("Error generating response: \(error.localizedDescription)")

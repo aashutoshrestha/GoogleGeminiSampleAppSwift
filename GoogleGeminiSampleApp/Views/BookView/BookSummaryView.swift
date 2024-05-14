@@ -23,7 +23,7 @@ struct BookSummaryView: View {
         if bookContentModel.responseBook == "" { // While loading the summary
             HStack(alignment: .center, spacing: 15) {
                 ProgressView() // Display a progress indicator
-                Text("Loading…") // Inform the user that the content is loading
+                Text("Loading…")
 
                 // Trigger fetching of the book summary when the view appears
                 .onAppear {

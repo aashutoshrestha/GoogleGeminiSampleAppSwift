@@ -34,7 +34,7 @@ class BookSummaryViewModel: ObservableObject {
 
         do {
             let response = try await model.generateContent(getBookPrompt(bookName: bookName))
-            responseBook = response.text ?? "" // Update with the response or empty string
+            responseBook = response.text ?? ""
         } catch {
             // Handle errors (e.g., display an error message to the user)
             print("Error generating response: \(error.localizedDescription)")

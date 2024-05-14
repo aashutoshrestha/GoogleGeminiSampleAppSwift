@@ -18,7 +18,7 @@ struct CaptureBook: View {
     @ObservedObject private var speechModel = TextToSpeechManager()
 
     var body: some View {
-        VStack { // Main vertical container for content
+        VStack { 
 
             // Conditionally display image and processed text
             if let image = captureBookModel.image {

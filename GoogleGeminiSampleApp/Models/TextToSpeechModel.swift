@@ -27,7 +27,7 @@ class TextToSpeechManager: NSObject, ObservableObject, AVSpeechSynthesizerDelega
     // Initializer to set up the speech synthesizer
     override init() {
         super.init()
-        synthesizer.delegate = self // Assign self as the delegate for callbacks
+        synthesizer.delegate = self
     }
 
     // Function to start speaking the given text
