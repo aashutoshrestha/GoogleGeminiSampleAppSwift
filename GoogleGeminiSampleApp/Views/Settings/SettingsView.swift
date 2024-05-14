@@ -35,7 +35,20 @@ struct SettingsView: View {
                 }
 
                 Button(action: {
-                    // ... (Our save logic remains the same)
+                    // Check if the Google Books API key has been provided
+                    if (booksApiKey != "")
+                    {
+                        // If the API key is not empty, save it using the SaveData class's saveGoogleAPIKey method
+                        SaveData().saveGoogleAPIKey(booksApiKey);
+                    }
+
+                    // Check if the Generative AI API key has been provided
+                    if (generativeAIAPIKey != "")
+                    {
+                        // If the API key is not empty, save it using the SaveData class's saveGenerativeAPIKey method
+                        SaveData().saveGenerativeAPIKey(generativeAIAPIKey);
+                    }
+                    
                 }) {
                     Text("Save")
                         .frame(maxWidth: .infinity) // Make button full width
